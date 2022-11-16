@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="SkyYogaChicago.Forms.YoutubePlayer">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20,35,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400" />
+                </Grid.RowDefinitions>
+                
+               
+                
+                <xct:MediaElement Grid.Row="0" MediaOpened="MediaElement_MediaOpened" x:Name="MyMediaElement"
+              ShowsPlaybackControls="True" />
+                <ActivityIndicator Grid.Row="0" x:Name="MyActivityIndicator" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Color="White" IsRunning="True"
+                BackgroundColor="Transparent"
+                IsVisible="False">
+                </ActivityIndicator>
+                <Label Grid.Row="1" x:Name="VideoTitle" TextColor="Black" IsVisible="False" LineBreakMode="TailTruncation" HorizontalOptions="FillAndExpand" FontAttributes="Bold"/>
+                <Label Grid.Row="2" x:Name="VideoUploadDate" TextColor="Black" IsVisible="False" LineBreakMode="WordWrap" HeightRequest="2" />
+                <Button Grid.Row="3" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" 
+                        Margin="20" x:Name="CloseButton" Clicked="CloseButton_Clicked"  
+                        Text="Close" TextColor="White" BackgroundColor="Transparent"
+                        IsVisible="true" FontSize="20">
+                </Button>
+            </Grid>
+             
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

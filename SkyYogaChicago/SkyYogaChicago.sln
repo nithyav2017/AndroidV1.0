@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago", "SkyYogaChicago.csproj", "{E661A17F-12E5-499B-A00D-66A898E5DD5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago.Forms.Android", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms.Android\SkyYogaChicago.Forms.Android.csproj", "{32F83310-3298-4387-98A8-31A2C950BB1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago.Forms", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms\SkyYogaChicago.Forms.csproj", "{F3882776-A236-43DF-82FF-116EEC5626E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F3882776-A236-43DF-82FF-116EEC5626E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3882776-A236-43DF-82FF-116EEC5626E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3882776-A236-43DF-82FF-116EEC5626E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3882776-A236-43DF-82FF-116EEC5626E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {987BAC28-3644-4A63-832C-76C403E48B6E}
+	EndGlobalSection
+EndGlobal
