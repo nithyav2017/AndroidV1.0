@@ -27,20 +27,7 @@ namespace SkyYogaChicago.Forms
             GetVideoStreams(uri);
         }
 
-        private async void GetVideoStreams1(Uri uri)
-        {
-            var video = await __videoCLient.GetVideoStream();
-            MyMediaElement.Source = video.StreamInfoUrl;
-            Label labelTitle = (Label)FindByName("VideoTitle");
-            labelTitle.Text = "Title :" + video.Title + "  Uploaded On :" + video.UploadDate;
-            labelTitle.IsVisible = true;
-            Label labelDate = (Label)FindByName("VideoUploadDate");
-            labelDate.Text = "Uploaded On :" + video.UploadDate;
-            labelDate.IsVisible = true;
-            Label labelDuration = (Label)FindByName("Duration");
-            labelDuration.Text = "Duration :" + video.Duration.ToString();
-            labelDuration.IsVisible = true;
-        }
+        
         private async void GetVideoStreams(Uri uri)
         {
             var youtube = new YoutubeClient();
@@ -60,23 +47,17 @@ namespace SkyYogaChicago.Forms
 
             var video = await youtube.Videos.GetAsync(videoId);
 
-            var title = video.Title; // "Collections - Blender 2.80 Fundamentals"
-            var author = video.Author.ChannelTitle; // "Blender"
-            var duration = video.Duration;
-            var uploadDate = video.UploadDate;
-            var description = video.Description;
-
+          
             if (streamInfo != null)
             {
-              //  var stream = await youtube.Videos.Streams.GetAsync(streamInfo);   
+                var stream = await youtube.Videos.Streams.GetAsync(streamInfo);   
                 MyMediaElement.Source = streamInfo.Url;
                 Label labelTitle = (Label)FindByName("VideoTitle");
-                labelTitle.Text = "Title :" + title;
-                Label labelDate = (Label)FindByName("VideoUploadDate");
-                labelDate.Text = "Uploaded On :" + uploadDate;
+                labelTitle.Text =   !string.IsNullOrEmpty(video.Title) ?  "Title :" + video.Title :  String.Empty ;         
+                labelTitle.IsVisible = true;
+
             }
         }
-
         private string GetVideoID(Uri uri)
         {
             var query = HttpUtility.ParseQueryString(uri.Query);

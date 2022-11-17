@@ -2,15 +2,16 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android">
 	<group android:checkableBehavior="single">
-		<item android:id="@+id/Introspection_1" android:title="Introspect1 Tamil" android:icon="@drawable/mind_analysis"/>
-		<item android:id="@+id/Introspection_2" android:title="Introspect1 English" android:icon="@drawable/mind_analysis"  />
-		<item android:id="@+id/Introspection_3" android:title="Introspect1 Tamil" android:icon="@drawable/mind_analysis"  />
-		<item android:id="@+id/Introspection_1" android:title="Introspect2 English" android:icon="@drawable/mind_analysis"/>
-		<item android:id="@+id/Introspection_2" android:title="Introspect3 Tamil" android:icon="@drawable/mind_analysis"  />
-		<item android:id="@+id/Introspection_3" android:title="Introspect3 English" android:icon="@drawable/mind_analysis"  />
-		<item android:id="@+id/Speech_Morning" android:title="Morning Meditation" android:icon="@drawable/meditation"/>
-		<item android:id="@+id/Speech_Evening" android:title="Evening Meditation" android:icon="@drawable/meditation" />
+		<item android:id="@+id/Introspection_1T" android:title="Introspect1 Tamil" android:icon="@drawable/mind_analysis"/>
+		<item android:id="@+id/Introspection_1E" android:title="Introspect1 English" android:icon="@drawable/mind_analysis"  />
+		<item android:id="@+id/Introspection_2T" android:title="Introspect2 Tamil" android:icon="@drawable/mind_analysis"  />
+		<item android:id="@+id/Introspection_2E" android:title="Introspect2 English" android:icon="@drawable/mind_analysis"/>
+		<item android:id="@+id/Introspection_3T" android:title="Introspect3 Tamil" android:icon="@drawable/mind_analysis"  />
+		<item android:id="@+id/Introspection_3E" android:title="Introspect3 English" android:icon="@drawable/mind_analysis"  />		
+		<item android:id="@+id/Speech_Morning" android:title="GnanaKalanjiyam Morning" android:icon="@drawable/meditation"/>
+		<item android:id="@+id/Speech_Evening" android:title="GnanaKalanjiyam Evening" android:icon="@drawable/meditation" />
+		<item android:id="@+id/MadhiVirundu" android:title="MakolaMadhivirundu" android:icon="@drawable/mind_analysis"  />		
+		<item android:id="@+id/Speech_Maharishi" android:title="Maharishi Sppech" android:icon="@drawable/speech" />
 		<item android:id="@+id/Songs" android:title="Songs" android:icon="@drawable/song" />
-		<item android:id="@+id/Speech_Maharishi" android:title="Maharishi Sppech" android:icon="@drawable/speech" />	
 	</group>
 </menu>

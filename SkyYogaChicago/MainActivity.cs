@@ -46,41 +46,93 @@ namespace SkyYogaChicago
 
             navigationView.NavigationItemSelected += (sender, e) =>
             {
+                Bundle bundle;
                 switch (e.MenuItem.ItemId)
                 {
 
-                    case SkyYogaChicago.Resource.Id.Introspection_1:
+                    case SkyYogaChicago.Resource.Id.Introspection_1T:
                         // Toast.MakeText(this, "Introspection_1 Clicked", ToastLength.Short).Show();
-                        Intent intent = new Intent(this, typeof(Introspect1));
-                        Bundle bundle = new Bundle();
+                        Intent intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
                         bundle.PutString("Title", "Introspect1_Tamil");
                         intent.PutExtras(bundle);
                         StartActivity(intent);
                         return;
 
-                    case SkyYogaChicago.Resource.Id.Introspection_2:
-                        intent = new Intent(this, typeof(Introspect1));
+                    case SkyYogaChicago.Resource.Id.Introspection_1E:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Introspect1_English");
+                        intent.PutExtras(bundle);
                         StartActivity(intent);
                         return;
 
-                    case SkyYogaChicago.Resource.Id.Introspection_3:
-                        Toast.MakeText(this, "Introspection_3 Clicked", ToastLength.Short).Show();
+                    case SkyYogaChicago.Resource.Id.Introspection_2T:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Introspect2_Tamil");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
+                        return;
+                    case SkyYogaChicago.Resource.Id.Introspection_2E:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Introspect2_English");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
+                        return;
+                    case SkyYogaChicago.Resource.Id.Introspection_3T:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Introspect3_Tamil");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
+                        return;
+                    case SkyYogaChicago.Resource.Id.Introspection_3E:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Introspect3_English");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
+                        return;
+                    case SkyYogaChicago.Resource.Id.MadhiVirundu:
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "MakolaMadhivirundu");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
                         return;
 
                     case SkyYogaChicago.Resource.Id.Songs:
-                        Toast.MakeText(this, "songs Clicked", ToastLength.Short).Show();
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Songs");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
                         return;
 
                     case SkyYogaChicago.Resource.Id.Speech_Morning:
-                        Toast.MakeText(this, "Morning Meditation Clicked", ToastLength.Short).Show();
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "GnanaKalanjiyam_Morning");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
                         return;
 
                     case SkyYogaChicago.Resource.Id.Speech_Evening:
-                        Toast.MakeText(this, "Evening Meditation Clicked", ToastLength.Short).Show();
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "GnanaKalanjiyam_Evening");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
                         return;
 
                     case SkyYogaChicago.Resource.Id.Speech_Maharishi:
-                        Toast.MakeText(this, "Maharishi Speech Clicked", ToastLength.Short).Show();
+                        intent = new Intent(this, typeof(Introspect));
+                        bundle = new Bundle();
+                        bundle.PutString("Title", "Maharishi_Sppech");
+                        intent.PutExtras(bundle);
+                        StartActivity(intent);
                         return;
                 }
 
