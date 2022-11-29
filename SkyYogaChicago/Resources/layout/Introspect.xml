@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+     
+     
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbarLayout"           
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+         <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#DAA520"
+            app:subtitle="Sample Title"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways" >    
+
+             <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="left">
+        
+            <Button  android:id="@+id/backButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:onClick="BackButton_Click"
+                        android:text="Back"/>
+             
+   
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ListView  android:id="@+id/mainlistView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingTop="50dp"
+          android:layout_marginLeft="5dp"
+          android:textSize="5sp"
+          android:dividerHeight="1dp"/>
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>   

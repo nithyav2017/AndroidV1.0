@@ -14,7 +14,8 @@ namespace SkyYogaChicago.Forms
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new YoutubePlayer(uri); //new AppShell();
+            MainPage = new NavigationPage(new YoutubePlayer(uri));  
+            
         }
 
         protected override void OnStart()

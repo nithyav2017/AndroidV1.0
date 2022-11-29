@@ -58,10 +58,12 @@ namespace SkyYogaChicago.Class
             TextView txtViewName = view.FindViewById<TextView>(__textView);
             TextView txtViewAuthor = view.FindViewById<TextView>(__textviewAuthor);
             ImageView imageView = view.FindViewById<ImageView>(__imageFlag);
+            Button button = view.FindViewById<Android.Widget.Button>(SkyYogaChicago.Resource.Id.backButton);
 
             txtViewName.SetText(__name[position], TextView.BufferType.Editable);
             txtViewAuthor.SetText(__author[position], TextView.BufferType.Normal);
             imageView.SetImageResource(__imageId[0]);
+             
 
             return view;
         }

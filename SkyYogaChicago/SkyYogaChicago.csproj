@@ -62,14 +62,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\ExpandableListAdapter.cs" />
     <Compile Include="BusinessLayer\ImageAdapter.cs" />
+    <Compile Include="BusinessLayer\Model\ExpandedMenuModel.cs" />
     <Compile Include="BusinessLayer\Model\IIntrospect_Videos.cs" />
     <Compile Include="BusinessLayer\Model\Introspect_Videos.cs" />
     <Compile Include="BusinessLayer\SquareImageView.cs" />
-    <Compile Include="Introspect.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Introspect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -101,9 +103,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\playbutton.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
@@ -164,16 +163,7 @@
     <AndroidResource Include="Resources\Menu\menu.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Introspect1.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\Introspect1_main.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SkyYogaChicago.Forms\SkyYogaChicago.Forms.Android\SkyYogaChicago.Forms.Android.csproj">
-      <Project>{32f83310-3298-4387-98a8-31a2c950bb1d}</Project>
-      <Name>SkyYogaChicago.Forms.Android</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
@@ -192,6 +182,30 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\list_submenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\list_header.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Rangoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\playbutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Introspect.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SkyYogaChicago.Forms\SkyYogaChicago.Forms.Android\SkyYogaChicago.Forms.Android.csproj">
+      <Project>{32f83310-3298-4387-98a8-31a2c950bb1d}</Project>
+      <Name>SkyYogaChicago.Forms.Android</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

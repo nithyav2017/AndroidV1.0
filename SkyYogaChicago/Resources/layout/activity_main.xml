@@ -9,9 +9,7 @@
     android:paddingBottom="5dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="@drawable/nature">
-
-  
+    android:background="@drawable/nature">  
 
    <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
@@ -19,20 +17,49 @@
         android:fitsSystemWindows="true"
         android:layout_width="match_parent">
 
-    <LinearLayout android:id="@+id/linearLayout1"
-            android:orientation="vertical"
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbarLayout"           
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
      <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
-        android:background="@android:color/holo_blue_dark"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:layout_scrollFlags="scroll|enterAlways" />
+        android:background="#DAA520"
+        app:subtitle="Sample Title"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways" >    
 
-          <android.support.v7.widget.SearchView
+     <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="left">
+      <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" 
+            android:layout_gravity="left"/>
+       <TextView android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Sky Yoga"
+                 android:textSize="20sp" 
+                 android:fontFamily="serif"
+                 android:textStyle="bold"
+                 android:gravity="center"
+                 android:textColor="@android:color/white"
+                 android:layout_marginStart="60dp"
+                        android:layout_marginTop="@dimen/abc_action_bar_icon_vertical_padding_material"
+                 android:layout_gravity="start"/>
+ 
+    </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+     <!-- TODO: Search Implementation-->
+       <!--   <android.support.v7.widget.SearchView
             android:id ="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,18 +69,17 @@
             android:padding="4dp"
             android:queryHint="Search Videos"/>
 
-        <ListView
+          <ListView
             android:id="@+id/list_view"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/search" />
+            android:layout_below="@+id/search" />-->
+
+
     </LinearLayout>
-     <!-- <LinearLayout
-        android:background="@drawable/nature"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>-->
+     
     <ImageView
             android:id="@+id/HomeScreen"
             android:layout_width="match_parent"
@@ -72,9 +98,14 @@
             android:layout_marginTop="40dp"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
-            android:background="@android:color/white"
-            app:menu="@menu/menu"/>
-          
-  
+            android:background="@android:color/white">          
+        
+     <ExpandableListView
+        android:id="@+id/navigationmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"                
+        android:background="@android:color/white"
+        android:layout_marginTop="192dp"/>
+    </android.support.design.widget.NavigationView>
     </android.support.v4.widget.DrawerLayout>     
 </RelativeLayout>   

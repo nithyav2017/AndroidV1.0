@@ -4,14 +4,12 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="SkyYogaChicago.Forms.YoutubePlayer">
     <ContentPage.Content>
-        <StackLayout>
-          
-            
+ 
+        <StackLayout>            
             <Grid Margin="20,35,20,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="400" />
-                </Grid.RowDefinitions>             
-               
+                </Grid.RowDefinitions> 
                 
                 <xct:MediaElement Grid.Row="0" MediaOpened="MediaElement_MediaOpened" x:Name="MyMediaElement"
               ShowsPlaybackControls="True" />
@@ -22,12 +20,13 @@
                 BackgroundColor="Transparent"
                 IsVisible="False">
                 </ActivityIndicator>
-                <Label Grid.Row="1" x:Name="VideoTitle"   IsVisible="true" HorizontalOptions="CenterAndExpand"   TextColor="Black" ></Label>
-                <Button VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Margin="20" x:Name="CloseButton" 
-                        Clicked="CloseButton_Clicked"  Text="Close" TextColor="White" BackgroundColor="Transparent" FontSize="20">
+                <Label Grid.Row="1" HeightRequest="20" x:Name="VideoTitle"   IsVisible="true" HorizontalOptions="CenterAndExpand"  
+                       TextColor="Black" FontSize="Title" FontAttributes="Bold"></Label>
+                
+                <Button Grid.Row="2" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Margin="20" x:Name="CloseButton" 
+                        Clicked="CloseButton_Clicked"  Text="Close" TextColor="White" BackgroundColor="#12157B" FontSize="20">
                 </Button>
-            </Grid>
-             
+            </Grid>             
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

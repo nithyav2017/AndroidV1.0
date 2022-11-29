@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using YoutubeExplode;
 using YoutubeExplode.Videos.Streams;
 using Container = YoutubeExplode.Videos.Streams.Container;
+ 
 
 namespace SkyYogaChicago.Forms
 {
@@ -52,10 +53,13 @@ namespace SkyYogaChicago.Forms
             {
                 var stream = await youtube.Videos.Streams.GetAsync(streamInfo);   
                 MyMediaElement.Source = streamInfo.Url;
+
                 Label labelTitle = (Label)FindByName("VideoTitle");
-                labelTitle.Text =   !string.IsNullOrEmpty(video.Title) ?  "Title :" + video.Title :  String.Empty ;         
+                labelTitle.Text =   !string.IsNullOrEmpty(video.Title) ?  video.Title :  String.Empty ;         
                 labelTitle.IsVisible = true;
 
+                Button button = (Button)FindByName("CloseButton");
+                button.IsVisible = true;
             }
         }
         private string GetVideoID(Uri uri)
@@ -83,6 +87,7 @@ namespace SkyYogaChicago.Forms
         async void CloseButton_Clicked(System.Object sender, System.EventArgs e)
         {
             MyMediaElement.Stop();
+            
             await Navigation.PopAsync();
         }
 

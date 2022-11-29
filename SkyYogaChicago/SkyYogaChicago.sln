@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago", "SkyYogaCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago.Forms.Android", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms.Android\SkyYogaChicago.Forms.Android.csproj", "{32F83310-3298-4387-98A8-31A2C950BB1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago.Forms", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms\SkyYogaChicago.Forms.csproj", "{F3882776-A236-43DF-82FF-116EEC5626E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyYogaChicago.Forms", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms\SkyYogaChicago.Forms.csproj", "{F3882776-A236-43DF-82FF-116EEC5626E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

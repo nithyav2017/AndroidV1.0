@@ -20,12 +20,13 @@ namespace SkyYogaChicago.Forms.Droid
             
             if (Intent.Data != null && Intent.Extras != null)
             {
-                var uri = Intent.Data;
+                var uri = Intent.Data;               
               //  presenter = !string.IsNullOrEmpty(Intent.Extras.GetString("Presenter")) ? Intent.Extras.GetString("Presenter").Trim():string.Empty ;
                 youtubeUri = !string.IsNullOrEmpty(uri.ToString()) ? uri.ToString().Trim() : string.Empty;
                 Uri systemUri = new Uri(youtubeUri, UriKind.RelativeOrAbsolute);
                 LoadApplication(new SkyYogaChicago.Forms.App(systemUri));
             }
+            
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
