@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:foregroundGravity="left">
+
+        <Button  android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:onClick="BackButton_Click"
+                    android:text="Close"/>
+
+    </FrameLayout>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+       android:id="@+id/youtube_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:foregroundGravity="center_vertical"
+   android:layout_marginTop="100dp"/>
+
+    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textAppearance="@android:style/TextAppearance.Small"
+       android:gravity="center"
+       android:fontFamily="sans-serif"
+       android:id="@+id/txtTitle"/>
+    
+    
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAppearance="@android:style/TextAppearance.Small"
+      android:gravity="center"
+      android:id="@+id/txtpresenter"/>
+
+    
+</LinearLayout>
