@@ -5,10 +5,6 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago", "SkyYogaChicago.csproj", "{E661A17F-12E5-499B-A00D-66A898E5DD5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyYogaChicago.Forms.Android", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms.Android\SkyYogaChicago.Forms.Android.csproj", "{32F83310-3298-4387-98A8-31A2C950BB1D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyYogaChicago.Forms", "..\SkyYogaChicago.Forms\SkyYogaChicago.Forms\SkyYogaChicago.Forms.csproj", "{F3882776-A236-43DF-82FF-116EEC5626E8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,16 +17,6 @@ Global
 		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E661A17F-12E5-499B-A00D-66A898E5DD5D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32F83310-3298-4387-98A8-31A2C950BB1D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{F3882776-A236-43DF-82FF-116EEC5626E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3882776-A236-43DF-82FF-116EEC5626E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3882776-A236-43DF-82FF-116EEC5626E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3882776-A236-43DF-82FF-116EEC5626E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

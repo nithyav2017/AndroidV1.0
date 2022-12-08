@@ -4,20 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:foregroundGravity="left">
+     
 
-        <Button  android:id="@+id/backButton"
+        <Button  android:id="@+id/closeButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_gravity="left"
-                    android:onClick="BackButton_Click"
+                    android:layout_gravity="left" 
+                    android:background="#12157B"
+                    android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
                     android:text="Close"/>
 
-    </FrameLayout>
+  
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <com.google.android.youtube.player.YouTubePlayerView
        android:id="@+id/youtube_view"
@@ -25,23 +31,27 @@
        android:layout_height="wrap_content"
        android:foregroundGravity="center_vertical"
    android:layout_marginTop="100dp"/>
-
+   
     <TextView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:textAppearance="@android:style/TextAppearance.Small"
-       android:gravity="center"
+       android:gravity="left"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="5dp"
        android:fontFamily="sans-serif"
-       android:id="@+id/txtTitle"/>
-    
+       android:textFontWeight="2"
+       android:id="@+id/txtTitle"/>  
     
 
     <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textAppearance="@android:style/TextAppearance.Small"
-      android:gravity="center"
+      android:gravity="left"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="5dp"
       android:id="@+id/txtpresenter"/>
-
-    
+     
+    </LinearLayout>
 </LinearLayout>

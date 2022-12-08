@@ -14,8 +14,8 @@ using YouTube.Player;
 
 namespace SkyYogaChicago
 {
-    [Activity(Label = "YouTubePlayer", ScreenOrientation = Android.Content.PM.ScreenOrientation.Nosensor, ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.KeyboardHidden,
-        Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "YouTube Player", ScreenOrientation = Android.Content.PM.ScreenOrientation.Nosensor, ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.KeyboardHidden,
+        Theme = "@style/AppTheme")]
     public class YouTubePlayer : YouTubeBaseActivity, IYouTubePlayerOnInitializedListener
     {
         public const int RecoveryDialogRequest = 1;
@@ -45,6 +45,14 @@ namespace SkyYogaChicago
                 youTubeView.Initialize(DeveloperKey.Key, this);
  
             }
+
+            var closeButton = FindViewById<Android.Widget.Button>(Resource.Id.closeButton);
+
+            closeButton.Click += (object sender, EventArgs e) =>
+            {
+                Intent intent = new Intent(this, typeof(MainActivity));
+                StartActivity(intent);
+            };
         }
 
         public void OnInitializationFailure(IYouTubePlayerProvider provider, YouTubeInitializationResult errorReason)
@@ -66,7 +74,7 @@ namespace SkyYogaChicago
             {
                 p1.CueVideo(videoId);
                 TextView textViewTitle = FindViewById<TextView>(Resource.Id.txtTitle);
-                textViewTitle.Text = title;
+                textViewTitle.Text = "Title: "+ title;
                 textViewTitle.Visibility = ViewStates.Visible;
 
                 TextView textViewPresenter = FindViewById<TextView>(Resource.Id.txtpresenter);

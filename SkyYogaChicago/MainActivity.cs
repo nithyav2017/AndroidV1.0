@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using SkyYogaChicago.BusinessLayer;
 using System;
 
+
 namespace SkyYogaChicago
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]

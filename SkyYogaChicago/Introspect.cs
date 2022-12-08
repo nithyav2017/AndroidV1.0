@@ -65,7 +65,7 @@ namespace SkyYogaChicago
                      Intent intent = new Intent(this, typeof(YouTubePlayer));
                      intent.SetData(Android.Net.Uri.Parse(Info.Url[e.Position]));
                      Bundle bundle = new Bundle();
-                     bundle.PutString("Title", Info.Author[e.Position]);
+                     bundle.PutString("Title", Info.VideoName[e.Position]);
                      bundle.PutString("Presenter", Info.Author[e.Position]);
                      intent.PutExtras(bundle);
                      StartActivity(intent);
